@@ -1,7 +1,7 @@
 # Edunet-Foundation-Steganogarphy-Hiding-Information-In-the-Image-
 Edunet Foundation Project (Steganogarphy Hiding Information In the Image) 
 # 🕵️‍♂️ Steganography Tool - Hide Secret Messages in Images
-This project is a beginner-friendly **Steganography Tool built in **Python** that allows users to **hide** and **reveal secret messages** in images using the **Least Significant Bit (LSB)** technique.
+This project is a beginner-friendly Steganography Tool built in **Python** that allows users to **hide** and **reveal secret messages** in images using the **Least Significant Bit (LSB)** technique.
 It features a simple yet powerful **GUI built with Tkinter**, making it accessible even to non-programmers.
 ## 📌 Features
 - 🔐 **Encrypt Messages** into PNG or JPG images
@@ -33,7 +33,6 @@ python encrypt.py
 > * Click "Encrypt Message" — a file named `encryptedImage.png` will be created with your hidden message.
 
 🔓 Decrypt a Message
-```bash
 python decrypt.py
 ```
 > Steps:
@@ -66,9 +65,9 @@ def encode_image(image_path, secret_message):
 
     encoded_img.save("encryptedImage.png")
     print("✅ Message encoded and image saved as encryptedImage.png")
-```
+
 Step 3: Decode Function
-```python
+python
 def decode_image(image_path):
     img = Image.open(image_path)
     binary_message = ""
@@ -85,10 +84,10 @@ def decode_image(image_path):
     return message
 
 Step 4: Use the Functions
-```python
+python
 encode_image("Nature.jpg", "This is a secret message!")
 print(decode_image("encryptedImage.png"))
-```
+
 🏁 Project Structure
 Stega-Aicte-Project/
 ├── encrypt.py              # GUI script to encrypt
@@ -115,5 +114,5 @@ Heartful thanks to:
 * 📘 Concepts of Steganography in Cybersecurity Research Papers
 
 -💬 Final Words
-> 🎯 *“Sometimes, the best place to hide something... is in plain sight.”*
+> 🎯 “Sometimes, the best place to hide something... is in plain sight.”
 > This project offers a practical introduction to cybersecurity and image processing with real-world relevance.
